@@ -44,15 +44,15 @@ footer {
 }
 
 /* Estilos para la galería */
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .gallery img {
     width: 30%;
     margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
 }
 
 /* Estilos para el formulario de contacto */
@@ -83,4 +83,13 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+header {
+    background-image: url('assets/fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
 }
